@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/page-lapidarts",
+      "handler": "page-lapidart.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/page-lapidarts/count",
+      "handler": "page-lapidart.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/page-lapidarts/:id",
+      "handler": "page-lapidart.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/page-lapidarts",
+      "handler": "page-lapidart.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/page-lapidarts/:id",
+      "handler": "page-lapidart.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/page-lapidarts/:id",
+      "handler": "page-lapidart.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_pages",
+  "info": {
+    "name": "blog_page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "richtext",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "blog_page"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "blog_pages",
+      "dominant": true
+    },
+    "category": {
+      "collection": "categories",
+      "via": "blog_pages"
+    },
+    "subtitre": {
+      "type": "string"
+    },
+    "subtitre2": {
+      "type": "string"
+    },
+    "contenu2": {
+      "type": "richtext"
+    },
+    "subtitre3": {
+      "type": "string"
+    },
+    "contenu3": {
+      "type": "richtext"
+    },
+    "references": {
+      "type": "text"
+    },
+    "subtitre4": {
+      "type": "string"
+    },
+    "contenu4": {
+      "type": "richtext"
+    },
+    "subtitre5": {
+      "type": "string"
+    },
+    "contenu5": {
+      "type": "richtext"
+    },
+    "subtitre6": {
+      "type": "string"
+    },
+    "contenu6": {
+      "type": "richtext"
+    },
+    "subtitre7": {
+      "type": "string"
+    },
+    "contenu7": {
+      "type": "richtext"
+    },
+    "subtitre8": {
+      "type": "string"
+    },
+    "contenu8": {
+      "type": "richtext"
+    },
+    "subtitre9": {
+      "type": "string"
+    },
+    "contenu9": {
+      "type": "richtext"
+    },
+    "subtitre10": {
+      "type": "string"
+    },
+    "contenu10": {
+      "type": "richtext"
+    },
+    "subtitre11": {
+      "type": "string"
+    },
+    "contenu11": {
+      "type": "richtext"
+    },
+    "subtitre12": {
+      "type": "string"
+    },
+    "contenu12": {
+      "type": "richtext"
+    },
+    "subtitre13": {
+      "type": "string"
+    },
+    "contenu13": {
+      "type": "richtext"
+    },
+    "subtitre14": {
+      "type": "string"
+    },
+    "contenu14": {
+      "type": "richtext"
+    },
+    "subtitre15": {
+      "type": "string"
+    },
+    "contenu15": {
+      "type": "richtext"
+    },
+    "subtitre16": {
+      "type": "string"
+    },
+    "contenu16": {
+      "type": "richtext"
+    },
+    "subtitre17": {
+      "type": "string"
+    },
+    "contenu17": {
+      "type": "richtext"
+    },
+    "subtitre18": {
+      "type": "string"
+    },
+    "contenu18": {
+      "type": "richtext"
+    },
+    "subtitre19": {
+      "type": "string"
+    },
+    "contenu19": {
+      "type": "richtext"
+    },
+    "subtitre20": {
+      "type": "string"
+    },
+    "contenu20": {
+      "type": "richtext"
+    },
+    "subtitre21": {
+      "type": "string"
+    },
+    "contenu21": {
+      "type": "richtext"
+    },
+    "subtitre22": {
+      "type": "string"
+    },
+    "contenu22": {
+      "type": "richtext"
+    },
+    "subtitre23": {
+      "type": "string"
+    },
+    "contenu23": {
+      "type": "richtext"
+    },
+    "subtitre24": {
+      "type": "string"
+    },
+    "contenu24": {
+      "type": "richtext"
+    },
+    "subtitre25": {
+      "type": "string"
+    },
+    "contenu25": {
+      "type": "richtext"
+    },
+    "subtitre26": {
+      "type": "string"
+    },
+    "contenu26": {
+      "type": "richtext"
+    },
+    "subtitre27": {
+      "type": "string"
+    },
+    "contenu27": {
+      "type": "richtext"
+    },
+    "subtitre28": {
+      "type": "string"
+    },
+    "contenu28": {
+      "type": "richtext"
+    },
+    "subtitre29": {
+      "type": "string"
+    },
+    "contenu29": {
+      "type": "richtext"
+    },
+    "subtitre30": {
+      "type": "string"
+    },
+    "contenu30": {
+      "type": "richtext"
+    },
+    "movie": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

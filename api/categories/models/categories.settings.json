@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "pages": {
+      "via": "categories",
+      "collection": "pages",
+      "dominant": true
+    },
+    "page_lapidart": {
+      "model": "page-lapidart",
+      "via": "category"
+    },
+    "blog_page": {
+      "via": "categories",
+      "model": "blog-page"
+    },
+    "blog_pages": {
+      "via": "category",
+      "collection": "blog-page",
+      "dominant": true
+    }
+  }
+}

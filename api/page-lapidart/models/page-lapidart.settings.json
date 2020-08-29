@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_lapidarts",
+  "info": {
+    "name": "page_lapidart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "richtext",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "via": "page_lapidart",
+      "model": "categories"
+    },
+    "subtitre": {
+      "type": "string"
+    }
+  }
+}
